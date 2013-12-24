@@ -1,0 +1,2 @@
+/*!build time : 2013-12-24 5:46:58 PM*/
+KISSY.add("gallery/imgProxy/1.0/index",function(a,b,c){function d(a){var b=this;d.superclass.constructor.call(b,a)}b.all;return a.extend(d,c,{},{ATTRS:{}}),d},{requires:["node","base"]});

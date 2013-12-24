@@ -1,0 +1,15 @@
+{
+    "name": "imgProxy",
+    "comName":"ImgProxy",
+    "version": "1.0",
+    "desc": "",
+    "tag":"图片代理",
+    "githubName":"ottomao@gmail.com",
+    "author": {
+        "name": "加里 茅晓锋",
+        "email": "xiaofeng.mxf@taobao.com",
+        "page": ""
+    },
+    "type": "kissy-gallery",
+    "type-url": "http://gallery.kissyui.com/guide"
+}

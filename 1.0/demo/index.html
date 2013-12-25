@@ -8,25 +8,12 @@
 </head>
 <body>
 <h2>ImgProxy的demo</h2>
+<h3>以下图片是Base64编码后获得的同域图片</h3>
 <img class="J_sampleImg" src="" alt="这里会显示base64编码的图片" />
 
 <script>
-    var S = KISSY;
-    if (S.Config.debug) {
-        var srcPath = "../../";
-        S.config({
-            packages:[
-                {
-                    name:"gallery/imgProxy",
-                    path:srcPath,
-                    charset:"utf-8",
-                    ignorePackageNameInUri:true
-                }
-            ]
-        });
-    }
 
-    S.use('gallery/imgProxy/1.0/index', function (S, ImgProxy) {
+    KISSY.use('gallery/imgProxy/1.0/index', function (S, ImgProxy) {
          var url = "http://img04.taobaocdn.com/bao/uploaded/i4/T1fQpaXtBXXXb1upjX.jpg";
          imgproxy.load(url,
              function(imgBase64) {

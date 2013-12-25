@@ -118,3 +118,7 @@ KISSY.add('gallery/imgProxy/1.0/index',function (S, Node,Base) {
 
 
 }, {requires:['node', 'base']});
+
+
+
+

@@ -8,6 +8,7 @@
 </head>
 <body>
 <h2>ImgProxy的demo</h2>
+<img class="J_sampleImg" src="" alt="这里会显示base64编码的图片" />
 
 <script>
     var S = KISSY;
@@ -26,7 +27,16 @@
     }
 
     S.use('gallery/imgProxy/1.0/index', function (S, ImgProxy) {
-          new ImgProxy();
+         var url = "http://img04.taobaocdn.com/bao/uploaded/i4/T1fQpaXtBXXXb1upjX.jpg";
+         Imgproxy.load(url,
+             function(imgBase64) {
+                 S.log(imgBase64);
+                 S.get(".J_sampleImg").src = imgBase64;
+             },
+             function(msg) {
+                 S.log("fail to load img: " + msg);
+             }
+         );
     })
 </script>
 </body>

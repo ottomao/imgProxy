@@ -28,13 +28,13 @@
 
     S.use('gallery/imgProxy/1.0/index', function (S, ImgProxy) {
          var url = "http://img04.taobaocdn.com/bao/uploaded/i4/T1fQpaXtBXXXb1upjX.jpg";
-         Imgproxy.load(url,
+         imgproxy.load(url,
              function(imgBase64) {
-                 S.log(imgBase64);
-                 S.get(".J_sampleImg").src = imgBase64;
+                console.log(imgBase64);
+                S.get(".J_sampleImg").src = imgBase64;
              },
              function(msg) {
-                 S.log("fail to load img: " + msg);
+                 console.log("fail to load img: " + msg);
              }
          );
     })

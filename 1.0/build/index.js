@@ -12,8 +12,8 @@ gallery/imgProxy/1.0/index
  **/
 KISSY.add('gallery/imgProxy/1.0/index',function (S, Node,Base) {
 
-    var SWF_FILE =  "http://a.tbcdn.cn/s/kissy/gallery/drawingPad/2.0/ImgProxy.swf";
-    var objWrapper, //the swf used for remote loading
+    var SWF_FILE =  "http://a.tbcdn.cn/s/kissy/gallery/imgProxy/1.0/ImgProxy.swf";
+    var objWrapper, 
         loading = false,
         ready   = false,
         id = 0,

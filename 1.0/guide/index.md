@@ -24,3 +24,4 @@ ImgProxy是一个图片代理工具。它通过Flash引入跨域的图片，做p
 
 * flash跨域引入图片时，需要有crossdomain.xml，且引用图片的站点位于其白名单中 e.g. http://img04.taobaocdn.com/crossdomain.xml
 * 使用组件时，会在window对象下生成一个全局变量window.imgProxy
+* 目前支持到IE9及以上。IE8木有canvas，也没有使用它的必要吧。

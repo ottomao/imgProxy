@@ -34,11 +34,11 @@
          var url = "http://img04.taobaocdn.com/bao/uploaded/i4/T1fQpaXtBXXXb1upjX.jpg";
          imgproxy.load(url,
              function(imgBase64) {
-                console.log(imgBase64);
                 S.get(".J_sampleImg").src = imgBase64;
+                S.log(imgBase64);
              },
              function(msg) {
-                 console.log("fail to load img: " + msg);
+                 S.log("fail to load img: " + msg);
              }
          );
     })

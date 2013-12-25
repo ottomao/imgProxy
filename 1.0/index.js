@@ -17,7 +17,7 @@ KISSY.add(function (S, Node,Base) {
     
     function createSwf(idOrEl, vars) {
 
-        var swfTpl ='<object data="__swfUrl" type="application/x-shockwave-flash" id="imgproxy" width="100%" height="100%">'+
+        var swfTpl ='<object data="__swfUrl" type="application/x-shockwave-flash" id="imgproxyMovie" name="imgproxyMovie" width="100%" height="100%">'+
                         '<param name="allowScriptAccess" value="always">'+
                         '<param name="flashvars" value="">'+
                         '<param name="wmode" value="transparent">'+
@@ -28,7 +28,13 @@ KISSY.add(function (S, Node,Base) {
 
         idOrEl = Node.one('#' + idOrEl);
         idOrEl.append(swfNode);
-        flashObj = swfNode.getDOMNode();
+
+        if(S.UA.ie && S.UA.ie <= 9){
+            flashObj = window["imgproxyMovie"];
+        }else{
+            flashObj = swfNode.getDOMNode();
+        }
+        
     }
     
     function loadSwf() {

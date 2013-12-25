@@ -2,7 +2,7 @@
     "name": "imgProxy",
     "comName":"ImgProxy",
     "version": "1.0",
-    "desc": "",
+    "desc": "利用flash对图片做base64编码，用于解决一些canvas下的图片跨域问题",
     "tag":"图片代理",
     "githubName":"ottomao@gmail.com",
     "author": {

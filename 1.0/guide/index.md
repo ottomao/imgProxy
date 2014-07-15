@@ -10,7 +10,7 @@ ImgProxy是一个图片代理工具。它通过Flash引入跨域的图片，做p
 
     S.use('gallery/imgProxy/1.0/index', function (S, ImgProxy) {
     	var url = "http://img04.taobaocdn.com/bao/uploaded/i4/T1fQpaXtBXXXb1upjX.jpg";
-    	Imgproxy.load(url,
+    	ImgProxy.load(url,
     	    function(imgBase64) {
     	        S.log(imgBase64);
     	    },
